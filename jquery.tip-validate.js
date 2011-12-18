@@ -11,12 +11,12 @@
  */
 ;(function($) {
     if(!$.fn.h5Validate) {
-        alert('jquery.validate: h5validate not loaded');
+        alert('jquery.tip-validate: h5validate not loaded');
         return;
     }
     
     if(!$.fn.qtip) {
-        alert('jquery.validate: qtip not loaded');
+        alert('jquery.tip-validate: qtip not loaded');
         return;
     }
     
@@ -59,16 +59,16 @@
         if(!validate(this)) event.preventDefault();
     }
     
-    $.fn.validate = function() {
+    $.fn.tipValidate = function() {
         this.filter('form')
             .h5Validate({ markInvalid: markInvalid, markValid: markValid })
             .submit(onSubmit)
             .bind('validator.validate', function(e) { validate(this); });
         
-        return this.end();
+        return this;
     };
     
     $(function() { 
-        $('form').validate();
+        $('form').tipValidate();
     });
 })(jQuery);
