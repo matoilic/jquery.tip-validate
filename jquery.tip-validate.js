@@ -1,5 +1,5 @@
 /**
- * jquery.tip-validate
+ * jquery.tip-validate https://github.com/matoilic/jquery.tip-validate
  *
  * @version v0.1.0
  * @author Mato Ilic <info@matoilic.ch>
