@@ -1,0 +1,41 @@
+{
+    "name": "tip-validate",
+    "version": "0.1.0",
+    "title": "jQuery.tip-validate",
+    "author": {
+        "name": "Mato Ilic",
+        "url": "http://matoilic.ch"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        },
+        {
+            "type": "GPL",
+            "url": "http://www.gnu.org/licenses/gpl.html"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1",
+		"qtip2": "*",
+		"h5validate": "0.7"
+    },
+    "description": "Extends h5validate to show the error messages in a tooltip using qtip2. It takes also care of canceling the submission of a form if it contains invalid inputs.",
+    "keywords": [
+        "placeholder",
+        "html5",
+        "polyfill",
+		"validation"
+    ],
+    "homepage": "https://github.com/matoilic/jquery.tip-validate",
+    "contributors": [],
+    "files": [
+        "jquery.tip-validate.js",
+        "jquery.tip-validate.min.js",
+        "README.md",
+		"vendor",
+		"demo"
+    ]
+}
+
