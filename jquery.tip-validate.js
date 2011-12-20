@@ -35,7 +35,12 @@
 		$element.removeClass(options.validClass)
 		        .addClass(options.errorClass)
 		        .data('valid', false)
-		        .qtip({content: { attr: 'title' }});
+		        .qtip({content: { attr: $.tipValidate.attr }})
+		        .qtip('show');
+
+        setTimeout(function() {
+            $element.qtip('hide');
+        }, $.tipValidate.delay);
 
 		options.settings.invalidCallback.call(options.element);					
 
@@ -58,6 +63,11 @@
     function onSubmit(event) {
         if(!validate(this)) event.preventDefault();
     }
+    
+    $.tipValidate = {
+        delay: 1000,
+        attr: 'title'
+    };
     
     $.fn.tipValidate = function() {
         this.filter('form')
