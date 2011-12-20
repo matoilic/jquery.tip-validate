@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery.tip-validate</title>
+        <link rel="stylesheet" href="jquery.qtip.css" type="text/css" charset="utf-8">
+        <style type="text/css" media="screen">
+            input:not([type=submit]) {
+                border: 1px solid #000;
+            }
+            
+            input.ui-state-error {
+                border: 1px solid #a00;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <p>
+                <label for="firstName">First name</label><br>
+                <input type="text" id="firstName" name="firstName" required title="Please enter your first name">
+            </p>
+            <p>
+                <label for="email">Email</label><br>
+                <input type="text" class="h5-email" id="email" name="email" required title="Please enter a valid email address">
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+        <script src="../vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../vendor/jquery.h5validate.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../vendor/jquery.qtip.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../jquery.tip-validate.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
