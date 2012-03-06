@@ -22,7 +22,7 @@
     
     function validate(form) {
         var valid = true;
-        $(form).find(':input').each(function() {
+        $(form).find(':input:not(:button)').each(function() {
            valid = valid && $(this).h5Validate('isValid');
         });
         
