@@ -61,7 +61,10 @@
     }
     
     function onSubmit(event) {
-        if(!validate(this)) event.preventDefault();
+        if(!validate(this)) {
+            event.preventDefault();
+            return false;
+        }
     }
     
     $.tipValidate = {
